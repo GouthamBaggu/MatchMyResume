@@ -99,9 +99,28 @@ if(score >= 80){
 }else{
   category <- "Poor Match"
 }
+
+# Extract vocabulary terms
+terms <- colnames(dtm_tfidf)
+
+# JD vector (row 1)
+jd_vector <- as.numeric(dtm_tfidf[1, ])
+
+# Resume vector (row 2)
+resume_vector <- as.numeric(dtm_tfidf[2, ])
+
+# Words present in JD but not in resume
+missing_terms <- terms[jd_vector > 0 & resume_vector == 0]
+
+# Show top 10 missing keywords
+top_missing <- head(missing_terms, 10)
+
+cat("\nSuggested Keywords to Improve Your Resume:\n")
+print(top_missing)
 cat("\n============================\n")
 cat("      ATS EVALUATION RESULT\n")
 cat("============================\n")
 cat("Match Category:", category, "\n")
 cat("Match Score:", score, "%\n")
 cat("============================\n")
+cat("Top missing Key words :",top_missing)
