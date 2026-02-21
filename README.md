@@ -19,7 +19,7 @@ This project simulates how modern ATS platforms automatically screen resumes.
 
 ## 🏗 System Architecture
 
-![ATS Flow Diagram]()
+![ATS Flow Diagram](Images/FlowChart.png)
 
 Pipeline Flow:
 
