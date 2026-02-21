@@ -1,6 +1,6 @@
 # 🚀 Match My Resume (R + NLP)
 <p align="center">
-  <img src="Images/Main" width="900">
+  <img src="Images/Main.png" width="900">
 </p>
 ## 🧠 Project Overview
 
