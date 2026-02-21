@@ -1,5 +1,7 @@
 # 🚀 Match My Resume (R + NLP)
-
+<p align="center">
+  <img src="Images/Main" width="900">
+</p>
 ## 🧠 Project Overview
 
 This project implements a core Applicant Tracking System (ATS) simulator using Natural Language Processing in R.
